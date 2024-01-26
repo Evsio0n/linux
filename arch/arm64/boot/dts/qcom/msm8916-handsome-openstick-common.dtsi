@@ -121,18 +121,6 @@
 	};
 };
 
-&pm8916_codec {
-	jack-gpios = <&tlmm 110 GPIO_ACTIVE_LOW>;
-	qcom,micbias-lvl = <2800>;
-
-	qcom,mbhc-vthreshold-low = <75 150 237 450 500>;
-	qcom,mbhc-vthreshold-high = <75 150 237 450 500>;
-
-	pinctrl-0 = <&jack_default>;
-	pinctrl-names = "default";
-
-	status = "okay";
-}
 
 &pm8916_rpm_regulators {
 	vdd_l1_l2_l3-supply = <&pm8916_s3>;
